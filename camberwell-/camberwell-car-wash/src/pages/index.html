@@ -1,0 +1,140 @@
+<!--meta
+{"key":"home","path":"/","title":"Camberwell Car Wash | Hand Car Wash & Valeting in Camberwell, London SE5","description":"Hand car wash and valeting at Railway Arch, 350 Camberwell Station Road, London SE5, near Denmark Hill station. Exterior washes, mini and full valets. Call 020 7737 8037.","preload":"/assets/img/hand-wash-foam.webp"}
+-->
+<section class="hero">
+  <div class="hero-bg"><img src="/assets/img/hand-wash-foam.webp" alt="" width="1800" height="1200" fetchpriority="high"></div>
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow" style="color:#8ec2ff">Camberwell, London SE5</span>
+      <h1>Hand car wash &amp; valeting in Camberwell</h1>
+      <p class="lead">From a quick exterior wash to a full valet, we clean your car by hand under the railway arches on Camberwell Station Road, a short walk from Denmark Hill station.</p>
+      <div class="btn-row">
+        <a href="{{site.phoneHref}}" class="btn btn-primary">{{icon:phone}}<span>Call {{site.phone}}</span></a>
+        <a href="/services/" class="btn btn-outline-white"><span>View services</span>{{icon:arrow}}</a>
+      </div>
+      <ul class="hero-points">
+        <li>{{icon:check}} Washed by hand</li>
+        <li>{{icon:check}} Interior valeting</li>
+        <li>{{icon:check}} Cars, vans &amp; 4x4s</li>
+      </ul>
+    </div>
+    <div class="hero-card" id="quote">
+      <h2>Quick enquiry</h2>
+      <p>Tell us your car and the service you’re after, and we’ll get back to you.</p>
+      <form id="quote-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="name">Name <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required maxlength="80"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20"><span class="err" role="alert"></span></div>
+          <div class="field full"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="err" role="alert"></span></div>
+          <div class="field full"><label for="service">Service</label><select id="service" name="service"><option value="">Not sure yet</option>{{serviceOptions}}</select></div>
+          <div class="field full"><label for="message">Your car &amp; any details <span class="req">*</span></label><textarea id="message" name="message" required maxlength="1500" placeholder="E.g. Ford Focus, full valet, could drop it off Saturday morning"></textarea><span class="err" role="alert"></span></div>
+          <div class="hp" aria-hidden="true"><label for="_honey">Leave this empty</label><input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-primary btn-block"><span class="spinner" aria-hidden="true"></span><span>Send enquiry</span><span class="btn-label-icon">{{icon:send}}</span></button>
+        </div>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><span class="ic">{{icon:drop}}</span><div><strong>Hand wash only</strong><span>Gentler on paint than brushes</span></div></div>
+    <div class="trust-item"><span class="ic">{{icon:seat}}</span><div><strong>Inside &amp; out</strong><span>From a quick hoover to a full valet</span></div></div>
+    <div class="trust-item"><span class="ic">{{icon:car}}</span><div><strong>All vehicle sizes</strong><span>Cars, vans, 4x4s and MPVs</span></div></div>
+    <div class="trust-item"><span class="ic">{{icon:train}}</span><div><strong>Easy to find</strong><span>Near Denmark Hill station</span></div></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our services</span>
+      <h2>Washes and valets for every car</h2>
+      <p class="lead">Choose the clean that suits your car and your day. Not sure which one you need? Just ask.</p>
+    </div>
+    <div class="svc-grid">
+      {{serviceCards}}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-media reveal">
+      <img src="/assets/img/pressure-wash.webp" alt="Car being pressure washed" width="1200" height="960" loading="lazy">
+      <div class="badge"><span class="ic">{{icon:pin}}</span><div><strong>Under the arches</strong><span>350 Camberwell Station Rd, SE5</span></div></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why drivers use us</span>
+      <h2>A proper hand wash, close to home</h2>
+      <p class="lead">Automatic car washes can leave swirl marks and miss the details. We wash every car by hand and take the time to do it properly.</p>
+      <ul class="checks">
+        <li>{{icon:check}}<span><strong>Careful with your paintwork:</strong> foam pre-wash and hand washing, not brushes.</span></li>
+        <li>{{icon:check}}<span><strong>Inside matters too:</strong> hoovering, wiping and full interior valets.</span></li>
+        <li>{{icon:check}}<span><strong>Any size vehicle:</strong> small hatchbacks to vans and 4x4s.</span></li>
+        <li>{{icon:check}}<span><strong>Easy to reach:</strong> on Camberwell Station Road, near Denmark Hill.</span></li>
+      </ul>
+      <a href="/about/" class="text-link">More about us {{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Clean car in three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Get in touch</h3><p>Call {{site.phone}} or send a quick enquiry with your car and the service you need.</p></div>
+      <div class="step reveal"><h3>Bring your car</h3><p>Pull in under the arches at 350 Camberwell Station Road, SE5 9JN.</p></div>
+      <div class="step reveal"><h3>Drive away clean</h3><p>We wash, dry and finish it by hand, then hand back the keys.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find us</span>
+      <h2>Railway Arch, Camberwell Station Road</h2>
+    </div>
+    <div class="location reveal">
+      <div class="location-card">
+        <ul class="info-list">
+          <li><span class="ic">{{icon:pin}}</span><div><small>Address</small><a href="{{mapsLink}}" target="_blank" rel="noopener">Railway Arch, 350 Camberwell Station Rd<br>London SE5 9JN</a></div></li>
+          <li><span class="ic">{{icon:phone}}</span><div><small>Phone</small><a href="{{site.phoneHref}}">{{site.phone}}</a></div></li>
+          <li><span class="ic">{{icon:mail}}</span><div><small>Email</small><a href="mailto:{{site.email}}">{{site.email}}</a></div></li>
+          <li><span class="ic">{{icon:train}}</span><div><small>Nearest station</small><strong>Denmark Hill</strong></div></li>
+        </ul>
+        <a href="{{mapsLink}}" target="_blank" rel="noopener" class="btn btn-white">{{icon:pin}}<span>Get directions</span></a>
+      </div>
+      <div class="map-frame"><iframe title="Map showing Camberwell Car Wash, 350 Camberwell Station Road, London SE5 9JN" src="https://maps.google.com/maps?q=350%20Camberwell%20Station%20Road%2C%20London%20SE5%209JN&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">FAQs</span><h2>Common questions</h2></div>
+    <div class="faq reveal">
+      <details><summary>Do I need to book?{{icon:plus}}</summary><p>Give us a call on {{site.phone}} to check when we can fit you in, especially for longer jobs like a full valet.</p></details>
+      <details><summary>How long does a wash take?{{icon:plus}}</summary><p>It depends on the service and how busy we are. An exterior hand wash is quickest, while a full valet takes considerably longer. Call us and we’ll give you an idea on the day.</p></details>
+      <details><summary>Do you clean vans and 4x4s?{{icon:plus}}</summary><p>Yes. We wash and valet vans, 4x4s, SUVs and people carriers as well as cars.</p></details>
+      <details><summary>How much does it cost?{{icon:plus}}</summary><p>Prices depend on the service and the size of the vehicle. Call us or send an enquiry and we’ll give you a price.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="review-box reveal">
+      <div class="stars" aria-hidden="true">{{icon:star}}{{icon:star}}{{icon:star}}{{icon:star}}{{icon:star}}</div>
+      <div><h3>Had your car cleaned with us?</h3><p>We’d really appreciate a review. It helps other local drivers find us.</p></div>
+      <a href="{{site.yell}}" target="_blank" rel="noopener" class="btn btn-outline"><span>Review us on Yell</span>{{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
